@@ -1,0 +1,427 @@
+@charset "UTF-8";
+/* Tipografía */
+@font-face {
+  font-family: bolds;
+  src: url(../fonts/titulos.ttf); }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+.secciones {
+  justify-content: end; }
+
+/* body {
+  background: linear-gradient(to bottom, #5d73538f, white); }
+*/
+.divide {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem; }
+  .divide img {
+    width: 8%; }
+
+.servicios .titulos {
+  margin: 1.5rem;
+  text-align: center; }
+
+.carpa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0; }
+  .carpa ul {
+    list-style: none; }
+  .carpa img {
+    width: 80%;
+    border-radius: 1rem; }
+  .carpa div {
+    padding: 0.3rem; }
+    .carpa div p {
+      font-size: 1rem; }
+.actividades div {
+  display: flex;
+  justify-content: space-between; }
+.audio{
+  display: flex;
+  margin: 1rem;
+  justify-content: center;
+}
+.actividades img {
+  width: 50%; }
+
+.actividades ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row; }
+  .actividades ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center; }
+    .actividades ul li img {
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+      margin-bottom: 1rem; }
+      #img-cabalgata{
+        margin-bottom: 0;
+      }
+
+.main-galeria h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: 'Cabin', sans-serif; }
+
+.main-fotos {
+  display: flex;
+  justify-content: center;}
+
+.foto {
+  width: 25rem;}
+  .foto img{
+    border-radius: 0.5cm;
+  }
+
+.main-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem; }
+  .main-about-img {
+    width: 100%;
+    border-radius: 2rem; }
+  .main-about .texto {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-size: 1.5rem; }
+
+.nosotros-texto {
+  font-family: 'Cabin', sans-serif;
+  display: flex;
+  flex-direction: row; }
+
+.main-contacto {
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; }
+
+aside {
+  display: flex;
+  justify-content: space-between;
+  padding: 7rem; }
+  aside img {
+    position: fixed;
+    top: 32rem;
+    word-wrap: break-word; }
+  aside .whatsapp {
+    left: 1rem; }
+
+.scrollToTopBtn {
+  cursor: pointer;
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all 0.5s ease; }
+
+.scrollToTopBtn2 {
+  cursor: pointer;
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  transform: translateY(100px);
+  /* and a transition */
+  transition: all 0.5s ease; }
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0); }
+
+.botones {
+  position: fixed; }
+
+footer {
+  text-align: center;
+  background-color: #f5f5f5;
+  width: 100%;
+  display: flex;
+  flex-flow: row reverse nowrap; }
+  footer h3 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1rem; }
+  footer ul {
+    list-style: none; }
+
+.footerUno {
+  width: 50%; }
+  .footerUno ul {
+    margin: 1.5rem; }
+    .footerUno ul img {
+      width: 3.5rem; }
+    .footerUno ul h3 {
+      margin-bottom: 1rem; }
+  .footerUno a {
+    margin: .5rem; }
+
+.derechos {
+  text-align: start; }
+
+.footerDos {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  width: 50%; }
+  .footerDos hr {
+    margin: 0px 10rem 0px 10rem; }
+  .footerDos ul img {
+    width: 3.5rem;
+    margin: .5rem; }
+  .footerDos ul h3 {
+    margin-bottom: 1rem; }
+
+.contactos {
+  padding: 2rem;
+  display: flex;
+  flex-direction: row; }
+
+.contactos form {
+  width: 90%;
+  background-color: #f5f5f5;
+  font-family: 'Cabin', sans-serif;
+  display: flex;
+  justify-content: center; }
+
+fieldset {
+  font-family: 'Cabin', sans-serif;
+  margin: 20px;
+  border-radius: 5px; }
+
+legend {
+  color: #5d7353a2;
+  font-size: 20px; }
+
+label {
+  font-family: bolds;
+  color: #5d7353a2;
+  font-size: 20px; }
+
+.contactos h2 {
+  font-family: bolds;
+  display: flex;
+  justify-content: center;
+  font-size: 50px; }
+
+.sobre {
+  font-family: bolds;
+  border-radius: 5px; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: #5d7353a2 double;
+  border-radius: 1rem; }
+
+#map {
+  height: 80vh;
+  margin: 1rem; }
+  .contactos{
+    align-items: center;
+  }
+  .mapa{
+    text-align: center;
+  }
+#servicios p{
+  font-size: 1.5rem;
+}
+@media (min-width: 501px) and (max-width: 1023px) {
+  .carpa{
+    flex-direction: column;
+  }
+  .contactos form {
+    width: 100%; }
+  .contactos{
+    align-items: center;
+  }
+  .mapa{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  .contactos {
+    flex-direction: column; } }
+
+@media (max-width: 500px) {
+  .footerUno {
+    align-items: center;
+    width: 100%; }
+  .footerUno ul {
+      margin: 1rem; }
+  .footerUno ul img {
+        width: 3rem; }
+  .footerUno ul h3 {
+    text-align: center;
+        margin: 1rem; }
+  .footerUno a {
+      text-align: center;
+      margin: .5rem; }
+  .footerDos ul h3 {
+          text-align: center;
+          margin: 1rem; }
+  .footerDos{
+    margin: 1rem;
+  }
+  .footerDos p{
+    margin: 0%;
+    text-align: center;
+  }
+  footer{
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  footer h3{
+    text-align: center;
+  }
+  .carpa{
+    flex-direction: column;
+  }
+  .lista_actividades ul{
+    flex-direction: column;
+  }
+  .contactos form {
+    width: 100%; }
+  .nosotros-texto {
+    display: flex;
+    flex-direction: column; }
+  .contactos {
+    flex-direction: column;
+    background-image: none; }
+  fieldset {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px; }
+  legend {
+    color: #5d7353a2;
+    font-size: 20px; }
+  label {
+    color: #5d7353a2;
+    font-size: 20px; }
+  input {
+    height: 30px; }
+  .contactos {
+    display: flex;
+    align-items: center; }
+    .contactos h2 {
+      display: flex;
+      justify-content: center;
+      font-size: 50px;
+      font-style: italic; }
+  #map {
+    display: flex;
+    align-content: center;
+    margin: 0;
+    width: 20rem; }
+  .sobre {
+    display: flex;
+    flex-direction: column;
+    height: 150px; }
+  .enQue {
+    display: flex;
+    flex-direction: column; }
+  textarea {
+    height: 200px;
+    width: 95%; } }
+
+.mapa {
+  margin: 1rem; }
+  .mapa h2 {
+    text-align: center; }
+
+h2 {  
+  margin: 0;
+  font-size: 3rem;
+  font-family: 'Cabin', sans-serif;
+}
+
+h3 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: 'Cabin', sans-serif; }
+
+p {
+  font-size: 1rem;
+  font-family: 'Lato', sans-serif; }
+
+.contacto-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacto-section-ubicacion-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+body {
+  background-image: url(../images/patron7.png);
+  background-repeat: repeat;
+  background-size: 25%;
+}
+
+.overlay-box {
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.overlay-box:hover .desc,
+.overlay-box:focus .desc {
+  opacity: 1; }
+
+.overlay-box .desc {
+  opacity: 0.01;
+  font-size: 1rem;
+  min-height: 540px;
+  padding: 30px 25px 20px;
+  transition: all 0.3s ease;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff; }
+  .overlay-box .desc h1 {
+    text-align: center;
+    line-height: 540px; }
+
+.carpa p {
+  text-align: center;
+  font-family: 'Cabin', sans-serif; }
+
+.carpa h4 {
+  text-align: center;
+  font-family: 'Cabin', sans-serif; }
+
+.carpa ul {
+  text-align: center; }
+  .carpa ul li {
+    font-size: 1.3rem; }
